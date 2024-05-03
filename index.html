@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="rating active">
+        <!-- Rating state start -->
+
+        <div class="img-container">
+          <img src="./images/icon-star.svg" alt />
+        </div>
+
+        <h1 class="rating__header">How did we do?</h1>
+        <p class="rating__para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form role="radiogroup">
+          <div class="btn--rating__container">
+            <input
+              type="radio"
+              name="rating"
+              id="rating1"
+              class="btn--rating"
+              value="1"
+            />
+            <div class="btn--rating__content">
+              1
+            </div>
+          </div>
+          <div class="btn--rating__container">
+            <input
+              type="radio"
+              name="rating"
+              id="rating2"
+              class="btn--rating"
+              value="2"
+            />
+            <div class="btn--rating__content">
+              2
+            </div>
+          </div>
+          <div class="btn--rating__container">
+            <input
+              type="radio"
+              name="rating"
+              id="rating3"
+              class="btn--rating"
+              value="3"
+            />
+            <div class="btn--rating__content">
+              3
+            </div>
+          </div>
+          <div class="btn--rating__container">
+            <input
+              type="radio"
+              name="rating"
+              id="rating4"
+              class="btn--rating"
+              value="4"
+            />
+            <div class="btn--rating__content">
+              4
+            </div>
+          </div>
+          <div class="btn--rating__container">
+            <input
+              type="radio"
+              name="rating"
+              id="rating5"
+              class="btn--rating"
+              value="5"
+            />
+            <div class="btn--rating__content">
+              5
+            </div>
+          </div>
+        </form>
+
+        <button type="submit" onclick="submitRating()" class="btn btn--submit">Submit</button>
+
+        <!-- Rating state end -->
+      </section>
+      <section class="thank-you">
+        <!-- Thank you state start -->
+
+        <img src="./images/illustration-thank-you.svg" alt />
+
+        <div class="your-rating">
+          You selected
+          <span class="your-rating__selected">4</span> out of 5
+        </div>
+
+        <h2 class="thank-you__header">Thank you!</h2>
+        <p class="thank-you__message">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+
+        <!-- Thank you state end -->
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
