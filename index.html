@@ -14,7 +14,7 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
     <main class="container">
@@ -26,75 +26,72 @@
         </div>
 
         <h1 class="rating__header">How did we do?</h1>
-        <p class="rating__para">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+        <p class=""></p>
 
-        <form role="radiogroup" aria-roledescription="ratings">
-          <div class="btn--rating__container">
-            <input
-              type="radio"
-              name="rating"
-              id="rating1"
-              class="btn--rating"
-              value="1"
-            />
-            <label class="btn--rating__value" for="rating1">
-              1
-            </label>
-          </div>
-          <div class="btn--rating__container">
-            <input
-              type="radio"
-              name="rating"
-              id="rating2"
-              class="btn--rating"
-              value="2"
-            />
-            <label class="btn--rating__value" for="rating2">
-              2
-            </label>
-          </div>
-          <div class="btn--rating__container">
-            <input
-              type="radio"
-              name="rating"
-              id="rating3"
-              class="btn--rating"
-              value="3"
-            />
-            <label class="btn--rating__value" for="rating3">
-              3
-            </label>
-          </div>
-          <div class="btn--rating__container">
-            <input
-              type="radio"
-              name="rating"
-              id="rating4"
-              class="btn--rating"
-              value="4"
-            />
-            <label class="btn--rating__value" for="rating4">
-              4
-            </label>
-          </div>
-          <div class="btn--rating__container">
-            <input
-              type="radio"
-              name="rating"
-              id="rating5"
-              class="btn--rating"
-              value="5"
-            />
-            <label class="btn--rating__value" for="rating5">
-              5
-            </label>
-          </div>
+        <form role="radiogroup">
+          <fieldset aria-labelledby="ratings">
+            <legend class="rating__para">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </legend>
+            <div class="ratings__container">
+              <div class="btn--rating__container">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating1"
+                  class="btn--rating"
+                  value="1"
+                />
+                <label class="btn--rating__value" for="rating1"> 1 </label>
+              </div>
+              <div class="btn--rating__container">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating2"
+                  class="btn--rating"
+                  value="2"
+                />
+                <label class="btn--rating__value" for="rating2"> 2 </label>
+              </div>
+              <div class="btn--rating__container">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating3"
+                  class="btn--rating"
+                  value="3"
+                />
+                <label class="btn--rating__value" for="rating3"> 3 </label>
+              </div>
+              <div class="btn--rating__container">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating4"
+                  class="btn--rating"
+                  value="4"
+                />
+                <label class="btn--rating__value" for="rating4"> 4 </label>
+              </div>
+              <div class="btn--rating__container">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating5"
+                  class="btn--rating"
+                  value="5"
+                />
+                <label class="btn--rating__value" for="rating5"> 5 </label>
+              </div>
+            </div>
+          </fieldset>
         </form>
 
-        <button type="submit" onclick="submitRating()" class="btn btn--submit">Submit</button>
+        <button type="submit" onclick="submitRating()" class="btn btn--submit">
+          Submit
+        </button>
 
         <!-- Rating state end -->
       </section>

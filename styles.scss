@@ -56,61 +56,69 @@ body {
     }
 
     .rating__header {
-      margin: 2.05rem 0 0.65rem;
+      margin: 2.05rem 0 0;
       font-size: 1.735rem;
-    }
-
-    .rating__para {
-      font-size: 0.938rem;
-      color: $textColor;
-      line-height: 1.6;
     }
 
     form {
       display: block;
-      margin: 1.6rem 0 1.95rem;
-      display: flex;
-      gap: 1.25rem;
+      margin: 0.7rem 0 1.95rem;
 
-      .btn--rating__container {
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        position: relative;
+      fieldset {
+        border: none;
 
-        &:hover {
-          background: $ratingBgHover;
-
-          .btn--rating__value {
-            color: $white;
-          }
+        .rating__para {
+          font-size: 0.938rem;
+          color: $textColor;
+          line-height: 1.6;
         }
 
-        .btn--rating {
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          cursor: pointer;
-
-          &:checked + .btn--rating__value {
-            background: $primary;
-            color: $white;
-          }
-        }
-
-        .btn--rating__value {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: $whiteTrnsp;
-          $radioTextColor: hsl(216, 12%, 54%);
-          color: $radioTextColor;
+        .ratings__container {
+          margin-top: 1.55rem;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          gap: 1.25rem;
+
+          .btn--rating__container {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            position: relative;
+
+            &:hover {
+              background: $ratingBgHover;
+
+              .btn--rating__value {
+                color: $white;
+              }
+            }
+
+            .btn--rating {
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              cursor: pointer;
+
+              &:checked + .btn--rating__value {
+                background: $primary;
+                color: $white;
+              }
+            }
+
+            .btn--rating__value {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background: $whiteTrnsp;
+              $radioTextColor: hsl(216, 12%, 54%);
+              color: $radioTextColor;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
         }
       }
     }
@@ -178,63 +186,68 @@ body {
 }
 
 @media (max-width: 375px) {
-    .container {
-        width: 326px;
-        border-radius: 1rem;
+  .container {
+    width: 326px;
+    border-radius: 1rem;
 
-        .rating {
-            padding: 1.45rem;
+    .rating {
+      padding: 1.45rem;
 
-            .img-container {
-                width: 40px;
-                height: 40px;
-            }
+      .img-container {
+        width: 40px;
+        height: 40px;
+      }
 
-            .rating__header {
-                font-size: 1.485rem;
-                margin: 1.25rem 0 0.7rem;
-            }
+      .rating__header {
+        font-size: 1.485rem;
+        margin: 1.25rem 0 0.7rem;
+      }
 
-            .rating__para {
-                font-size: 0.885rem;
-            }
+      form {
+        margin-bottom: 1.5rem;
 
-            form {
-                margin-bottom: 1.5rem;
-                gap: 1.1rem;
+        fieldset {
+          .rating__para {
+            font-size: 0.885rem;
+          }
 
-                .btn--rating__container {
-                    width: 42px;
-                    height: 42px;
+          .ratings__container {
+            gap: 1.1rem;
 
-                    .btn--rating__value {
-                        font-size: 0.9rem;
-                    }
-                }
-            }
-        }
+            .btn--rating__container {
+              width: 42px;
+              height: 42px;
 
-        .thank-you {
-            padding: 2.2rem 1rem;
-
-            img {
-                width: 140px;
-                margin-bottom: 1.6rem;
-            }
-
-            .your-rating {
-                width: 170px;
-                margin-bottom: 1.75rem;
-                font-size: 0.875rem;
-            }
-
-            .thank-you__header {
-                font-size: 1.5rem;
-            }
-
-            .thank-you__message {
+              .btn--rating__value {
                 font-size: 0.9rem;
+              }
             }
+          }
         }
+      }
     }
+
+    .thank-you {
+      padding: 2.2rem 1rem;
+
+      img {
+        width: 140px;
+        margin-bottom: 1.6rem;
+      }
+
+      .your-rating {
+        width: 170px;
+        margin-bottom: 1.75rem;
+        font-size: 0.875rem;
+      }
+
+      .thank-you__header {
+        font-size: 1.5rem;
+      }
+
+      .thank-you__message {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
