@@ -14,7 +14,7 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   </head>
   <body>
     <main class="container">
@@ -31,7 +31,7 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <form role="radiogroup">
+        <form role="radiogroup" aria-roledescription="ratings">
           <div class="btn--rating__container">
             <input
               type="radio"
@@ -40,9 +40,9 @@
               class="btn--rating"
               value="1"
             />
-            <div class="btn--rating__content">
+            <label class="btn--rating__value">
               1
-            </div>
+            </label>
           </div>
           <div class="btn--rating__container">
             <input
@@ -52,9 +52,9 @@
               class="btn--rating"
               value="2"
             />
-            <div class="btn--rating__content">
+            <label class="btn--rating__value">
               2
-            </div>
+            </label>
           </div>
           <div class="btn--rating__container">
             <input
@@ -64,9 +64,9 @@
               class="btn--rating"
               value="3"
             />
-            <div class="btn--rating__content">
+            <label class="btn--rating__value">
               3
-            </div>
+            </label>
           </div>
           <div class="btn--rating__container">
             <input
@@ -76,9 +76,9 @@
               class="btn--rating"
               value="4"
             />
-            <div class="btn--rating__content">
+            <label class="btn--rating__value">
               4
-            </div>
+            </label>
           </div>
           <div class="btn--rating__container">
             <input
@@ -88,9 +88,9 @@
               class="btn--rating"
               value="5"
             />
-            <div class="btn--rating__content">
+            <label class="btn--rating__value">
               5
-            </div>
+            </label>
           </div>
         </form>
 
